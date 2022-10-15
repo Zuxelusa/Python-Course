@@ -5,7 +5,7 @@
 
 from functions import inputFloat
 
-n = inputFloat(1)
+n = inputFloat(0)
 s = 0
 for i in range(len(str(n))):
     e = str(n)[i]

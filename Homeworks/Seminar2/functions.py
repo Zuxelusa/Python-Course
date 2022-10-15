@@ -1,3 +1,5 @@
+
+import random
 def inputFloat(t = 0):# 0 - float, 1 - int
     while True:
         if t == 0: n = input("Input real number: ")
@@ -7,3 +9,9 @@ def inputFloat(t = 0):# 0 - float, 1 - int
             if t == 1: return int(n)
         except ValueError:
             print("Try again!")
+
+def create_new_list (quantity, start, end):
+    lst = []
+    for i in range(quantity):
+        lst.append(random.randint(start, end))
+    return lst

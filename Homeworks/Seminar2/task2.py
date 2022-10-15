@@ -5,8 +5,8 @@
 from functions import inputFloat
 
 n = inputFloat(1) # запрос int
-
 list = [1]
+
 for i in range(1, n):
-    list.append(list[i - 1] * (i+1))
+    list.append(list[i - 1] * (i + 1))
 print(list)

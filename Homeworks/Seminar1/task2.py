@@ -6,11 +6,8 @@ def CheckTheFormula(X, Y, Z):
     else: 
         return False
 
-print(f"For X,Y,X values are 'True, True, True' accordingly the formula returns: {CheckTheFormula(True, True, True)}.")
-print(f"For X,Y,X values are 'True, True, False' accordingly the formula returns: {CheckTheFormula(True, True, False)}.")
-print(f"For X,Y,X values are 'True, False, False' accordingly the formula returns: {CheckTheFormula(True, False, False)}.")
-print(f"For X,Y,X values are 'False, False, False' accordingly the formula returns: {CheckTheFormula(False, False, False)}.")
-print(f"For X,Y,X values are 'False, True, True' accordingly the formula returns: {CheckTheFormula(False, True, True)}.")
-print(f"For X,Y,X values are 'False, False, True' accordingly the formula returns: {CheckTheFormula(False, False, True)}.")
-print(f"For X,Y,X values are 'True, False, True' accordingly the formula returns: {CheckTheFormula(True, False, True)}.")
-print(f"For X,Y,X values are 'False, True, False' accordingly the formula returns: {CheckTheFormula(False, True, False)}.")
+b = [True, False]
+for i in range(len(b)):
+    for j in range(len(b)):
+        for k in range(len(b)):
+            print(f"For X,Y,X values are '{b[i]}, {b[j]}, {b[k]}' accordingly the formula returns: {CheckTheFormula(b[i], b[j], b[k])}.")

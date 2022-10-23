@@ -28,7 +28,7 @@ def create_polynomial_formula(k, fr, to):
 
     # добавляем член с Х в первой степени, если не 0
     x1 = rnd(fr, to)
-    if x1 != 0: lst.append(f"{x1}x")
+    if x1 != 0: lst.append(f"{x1}*x")
 
     # добавляем свободный член, если не 0
     x0 = rnd(fr, to)

@@ -7,3 +7,4 @@ def my_replace(text: str, excl: str):
 text = "Привет, моя абвгдейка, привет абв! и ты туАБВда"
 excl = "абв"
 print(my_replace(text, excl))
+

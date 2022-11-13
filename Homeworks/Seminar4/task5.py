@@ -83,6 +83,8 @@ new_lst.append (str(sum_in_tuple2(x0)))
 
 result_polynom = f"k = {max_st}: " + " + ".join(new_lst) + " = 0"
 
+print(file_read_line("file.txt"))
+print(file_read_line("file1.txt"))
 print(result_polynom)
 
 f = open("result.txt", "w", encoding="UTF-8")

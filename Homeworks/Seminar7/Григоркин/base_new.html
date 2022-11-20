@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Телефонный справочник</title>
+</head>
+<body>
+
+{% if data %}
+    <table>
+        <tr><th>ID</th><th>ФИО</th><th>Телефоны</th></tr>
+        {% for row in data %}
+            <tr><td>{{ row[0] }}</td><td>{{ row[1] }}</td><td>{{ row[2] }}</td></tr>
+        {% endfor %}
+    </table>
+{% endif %}
+
+</body>
+</html>

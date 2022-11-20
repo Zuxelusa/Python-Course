@@ -83,7 +83,7 @@ def input_for_transfer():
             else:
                 print("Сотрудника не перевести, он уже работает в этом отделе.")
         else:
-            print(f"Такого ID в базе не существует.")
+            p\\rint(f"Такого ID в базе не существует.")
     else:
         print(f"Такого ID в базе не существует.")
     input_for_transfer()

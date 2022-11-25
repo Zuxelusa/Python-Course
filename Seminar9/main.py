@@ -5,7 +5,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 from commands.base import start, player_profile_command
 from handlers.player_profile import *
 
-TOKEN = "5818612850:AAHlozpMGjsZFRJk599sLEZhvZ9RvXUZoI8"
+TOKEN = ""
 
 # Enable logging
 logging.basicConfig(

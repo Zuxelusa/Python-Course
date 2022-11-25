@@ -1,12 +1,8 @@
 # обработчик калькулятора
 import random
-
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import CallbackContext, ConversationHandler
-
 from ui import inputcheck
-
-# from game import *
 
 limit = 0
 total = 0
@@ -16,7 +12,7 @@ player_type = 0
 def init_var():
     global limit, total, step, player_type
     limit = 28
-    total = 56
+    total = 221
     step = 1
     player_type = 0
 
@@ -118,24 +114,12 @@ def su_e_fa_ans(update: Update, context: CallbackContext) -> int:
         step = 1
     return 3
 
-# def game_start(update: Update, context: CallbackContext) -> int:
-#     global step, total, limit
-#     print(step)
-#     pr = update.message.reply_text
-#     pr(f"Начинаем игру! У нас на столе {total} конфет.")
-#     if step == 1:
-#         pr(f"Ваш ход!")
-#         pr("Сколько конфет забираете: ")
-#     if step == -1:
-#         pr(f"Ход второго игрока!")
-#     return 4
-
 def game_body(update: Update, context: CallbackContext) -> int:
     global step, total, limit, player_type
     pr = update.message.reply_text
     cur = inputcheck(update.message.text, 1, min(total - 1, limit))
     print(f"cur = {cur}, step = {step}, player_type = {player_type}")
-    # pr(f"Сейчас на столе {total} конфет(ы).\n")
+
     if type(cur) == int:
         step *= -1
         # if step == 1 and player_type != 0:

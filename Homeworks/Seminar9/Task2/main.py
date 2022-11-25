@@ -55,7 +55,6 @@ def main() -> None:
     # )
     # dispatcher.add_handler(player_profile_conv_handler)
 
-
     # Start the Bot
     updater.start_polling()
     print("BOT STARTED")

@@ -1,11 +1,5 @@
-from telegram import Update, ForceReply
-from telegram.ext import CallbackContext
-
 from t_bot_handlers.handlers import *
 from ui import game_intro
-
-
-# start
 
 def start(update: Update, context: CallbackContext) -> None:
     """Send a message when the command /start is issued."""
@@ -23,7 +17,6 @@ def candies(update: Update, context: CallbackContext) -> None:
     pr = update.message
     init_var()
     pr.reply_text(f"Начинаем игру \"Конфеты\"\n")
-    # candy_game(221, 28)
     pr.reply_text(game_intro(limit, total))
     reply_kb_markup = ReplyKeyboardMarkup([["с ботом", "с другом"], ], one_time_keybord=True)
     pr.reply_text("Выберите режим игры: ", reply_markup=reply_kb_markup)

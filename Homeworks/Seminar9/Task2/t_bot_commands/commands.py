@@ -12,10 +12,22 @@ def calc(update: Update, context: CallbackContext) -> None:
     update.message.reply_text(f"Введи выражение:\n")
     return 1
 
+
+limit = 28
+total = 221
+step = 1
+player_type = 0
+def init_var():
+    global limit, total, step, player_type
+    limit = 28
+    total = 221
+    step = 1
+    player_type = 0
+
 # поиграть в игру 2021
 def candies(update: Update, context: CallbackContext) -> None:
     pr = update.message
-    init_var()
+    init_var
     pr.reply_text(f"Начинаем игру \"Конфеты\"\n")
     pr.reply_text(game_intro(limit, total))
     reply_kb_markup = ReplyKeyboardMarkup([["с ботом", "с другом"], ], one_time_keybord=True)

@@ -3,18 +3,12 @@ import random
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import CallbackContext, ConversationHandler
 from ui import inputcheck
+from t_bot_commands.commands import *
 
-limit = 0
-total = 0
-step = 0
+limit = 28
+total = 221
+step = 1
 player_type = 0
-
-def init_var():
-    global limit, total, step, player_type
-    limit = 28
-    total = 221
-    step = 1
-    player_type = 0
 
 def input_calc_exp(update: Update, context: CallbackContext) -> int:
     calc_exp = update.message.text

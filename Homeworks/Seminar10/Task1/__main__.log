@@ -23,3 +23,5 @@
 2022-11-29 13:32:21,545 CRITICAL A message of CRITICAL severity
 2022-11-29 13:32:21,548 INFO Scheduler started
 2022-11-29 13:32:26,024 INFO Александр Соловьев запустил команду start
+2022-11-29 13:50:18,831 INFO Received signal 2 (SIGINT), stopping...
+2022-11-29 13:50:18,831 INFO Scheduler has been shut down

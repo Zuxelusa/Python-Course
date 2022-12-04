@@ -32,7 +32,10 @@ def main() -> None:
             1: [MessageHandler(Filters.text, menu_choice)],
             2: [MessageHandler(Filters.text, show_employee_by_id_department)],
             3: [MessageHandler(Filters.text, new_department)],
-            # RESULT_STATE: [MessageHandler(Filters.text, result_output)],
+            4: [MessageHandler(Filters.text, new_employee)],
+            5: [MessageHandler(Filters.text, hire_employee_handler)],
+            6: [MessageHandler(Filters.text, move_employee_handler)],
+            7: [MessageHandler(Filters.text, dismiss_employee_handler)],
         },
         fallbacks=[],
     )

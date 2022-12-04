@@ -8,10 +8,10 @@
 #     {"id": 2, "fio": "bob ivanov", "salary": 50},
 #     {"id": 3, "fio": "jon don", "salary": 100}
 # ]
-import ui
+# employees = []
+# departments = []
+from ui.data_sr import employees, departments
 
-employees = []
-departments = []
 
 def find_last_id(lst):
     return max([i["id"] for i in lst])
@@ -49,9 +49,7 @@ def dismiss_emloyee(id_employee):
     departments.append(department)
 
 def transfer_employee(id_employee, id_department):
-    # TODO: увольняем сотрудника из отдела
     dismiss_emloyee(id_employee)
-    # TODO: добавляем сотрудника в новый отдел
     department = [x for x in departments if id_department == x["id"]][0]
     departments.remove(department)
     department["employees"].append(id_employee)

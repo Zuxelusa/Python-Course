@@ -2,6 +2,10 @@ from ui.ui_view import *
 from ui.data_sr import *
 from ui.logger import *
 
+new_employee_form = {"stage": 0}
+hire_employee_form = {"stage": 0}
+move_employee_form = {"stage": 0}
+
 MENU_ACTIONS = {
     1: ["Вывести список отделов", show_departments],
     2: ["Вывести список всех сотрудников", show_employees],

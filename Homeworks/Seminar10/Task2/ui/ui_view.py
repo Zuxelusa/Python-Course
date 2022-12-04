@@ -1,23 +1,9 @@
 import ui.ui_controller
 from models import *
 
-def input_check(input_str, min_val, max_val = 10000000):
-    while True:
-        val = input(input_str)
-        if val.isdigit():
-            val = int(val)
-            if min_val <= val <= max_val:
-                return int(val)
-            else: print(f"Введите число от {min_val} до {max_val}")
-        else:
-            print(f"Введите число")
-            continue
-
 def prefix_menu():
     return "\n\t\t\t\t\t ПРОГРАММА ДЛЯ РАБОТЫ С СОТРУДНИКАМИ ОТДЕЛОВ\n"
 
-# def menu_choice(max_menu):
-#     return input_check("Выберите пункт меню: ", 0, max_menu)
 
 def show_departments(param = None):
     res = ""
@@ -49,54 +35,44 @@ def input_name_department(new_dep):
     add_department(new_dep)
     return f"ADDED NEW DEPARTMENT {new_dep}"
 
-def input_employee():
-    name = input("Введите ФИО сотрудника: ")
-    salary = input_check("Введите размер заработной платы сотрудника: ", 1, 500000)
-    add_employee(name, salary)
-    return f"ADDED NEW EMPLOYEE {name}"
+def input_employee(empl_dict: dict):
+    add_employee(empl_dict['name'], empl_dict['salary'])
+    return f"ADDED NEW EMPLOYEE {empl_dict['name']}"
 
-def input_id_tohire():
-    id_employee = input_check("Введите id сотрудника: ", 1)
-    id_department = input_check("Введите id отдела для найма: ", 1)
+def input_id_tohire(hire_dict: dict):
+    id_employee = hire_dict['id_employee']
+    id_department = hire_dict['id_department']
     if not is_employee_in_department(id_employee, id_department):
-        if is_id(id_department, departments) and is_id(id_employee, employees) :
+        if is_id(id_department, departments) and is_id(id_employee, employees):
             hire_employee(id_employee, id_department)
-            print("Сотрудник успешно нанят")
-            return f"HIRED EMPLOYEE ID {id_employee} IN DEPARTAMENT ID {id_department}"
+            return "Сотрудник успешно нанят", f"HIRED EMPLOYEE ID {id_employee} IN DEPARTAMENT ID {id_department}"
         else:
-            print(f"Такого(их) ID в базе не существует.")
-            input_id_tohire()
+            return "Такого(их) ID в базе не существует."
     else:
-        print("Этот сотрудник уже работает в указанном отделе")
-        input_id_tohire()
+        return "Этот сотрудник уже работает в указанном отделе"
 
-def input_for_transfer():
-    id_employee = input_check("Введите id сотрудника: ", 1)
+def input_for_transfer(move_dict: dict):
+    id_employee = move_dict['id_employee']
+    id_department = move_dict['id_department']
     if is_id(id_employee, employees):
-        lst = list((x["name"] for x in departments if id_employee in x["employees"]))
-        print("Сотрудник будет переведен из отдела", lst[0])
-        id_department = input_check("Введите id отдела для найма: ", 1)
         if is_id(id_department, departments):
-            if not is_employee_in_department(id_employee,id_department):
+            if not is_employee_in_department(id_employee, id_department):
                 dep_cur = transfer_employee(id_employee, id_department)
-                print("Сотрудник успешно переведен в", dep_cur)
-                return f"TRANSFERED EMPLOYEE ID {id_employee} TO DEPARTAMENT ID {id_department}"
+                return f"Сотрудник успешно переведен в {dep_cur}", f"TRANSFERED EMPLOYEE ID {id_employee} TO DEPARTAMENT ID {id_department}"
             else:
-                print("Сотрудника не перевести, он уже работает в этом отделе.")
+                return "Сотрудника не перевести, он уже работает в этом отделе."
         else:
-            print(f"Такого ID в базе не существует.")
+            return f"Такого ID в базе не существует."
     else:
-        print(f"Такого ID в базе не существует.")
-    input_for_transfer()
+        return f"Такого ID в базе не существует."
 
-def input_for_dismiss():
-    id_employee = input_check("Введите id сотрудника: ", 1)
+def input_for_dismiss(id_employee):
+    # id_employee = input_check("Введите id сотрудника: ", 1)
     if is_id(id_employee, employees):
         lst = list((x["name"] for x in departments if id_employee in x["employees"]))
-        print("Сотрудник будет уволен из отдела", lst[0])
+        # print("Сотрудник будет уволен из отдела", lst[0])
         dismiss_emloyee(id_employee)
-        print("Сотрудник успешно уволен")
-        return f"EMPLOYEE ID {id_employee} DISMISSED"
+        return "Сотрудник успешно уволен", f"EMPLOYEE ID {id_employee} DISMISSED"
     else:
-        print(f"Такого ID в базе не существует.")
-        input_for_dismiss()
+        return f"Такого ID в базе не существует."
+

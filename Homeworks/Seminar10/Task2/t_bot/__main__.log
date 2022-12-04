@@ -2914,3 +2914,352 @@ Traceback (most recent call last):
   File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\models.py", line 17, in find_last_id
     return max([i["id"] for i in lst])
 ValueError: max() arg is an empty sequence
+2022-12-02 20:16:57,637 INFO Received signal 2 (SIGINT), stopping...
+2022-12-02 20:16:57,638 INFO Scheduler has been shut down
+2022-12-04 09:59:45,344 INFO An INFO
+2022-12-04 09:59:45,344 WARNING A WARNING
+2022-12-04 09:59:45,344 ERROR An ERROR
+2022-12-04 09:59:45,345 CRITICAL A message of CRITICAL severity
+2022-12-04 09:59:45,350 INFO Scheduler started
+2022-12-04 09:59:55,206 INFO Александр Соловьев запустил команду start
+2022-12-04 10:00:21,113 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\conversationhandler.py", line 627, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\handler.py", line 199, in handle_update
+    return self.callback(update, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\t_bot\handlers.py", line 58, in new_department
+    res = ui.ui_controller.main(4, name_dep)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\ui\ui_controller.py", line 19, in main
+    result = MENU_ACTIONS[menu_number][1](param)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\ui\ui_view.py", line 49, in input_name_department
+    add_department(new_dep)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\models.py", line 32, in add_department
+    note_to_add = {"id": find_last_id(departments) + 1, "name": name, "employees": []}
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\models.py", line 17, in find_last_id
+    return max([i["id"] for i in lst])
+ValueError: max() arg is an empty sequence
+2022-12-04 10:00:59,402 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 10:00:59,402 INFO Scheduler has been shut down
+2022-12-04 10:01:01,310 INFO An INFO
+2022-12-04 10:01:01,310 WARNING A WARNING
+2022-12-04 10:01:01,310 ERROR An ERROR
+2022-12-04 10:01:01,310 CRITICAL A message of CRITICAL severity
+2022-12-04 10:01:01,312 INFO Scheduler started
+2022-12-04 10:01:10,380 INFO Александр Соловьев запустил команду start
+2022-12-04 10:01:25,276 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\conversationhandler.py", line 627, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\handler.py", line 199, in handle_update
+    return self.callback(update, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\t_bot\handlers.py", line 58, in new_department
+    res = ui.ui_controller.main(4, name_dep)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\ui\ui_controller.py", line 19, in main
+    result = MENU_ACTIONS[menu_number][1](param)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\ui\ui_view.py", line 49, in input_name_department
+    add_department(new_dep)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\models.py", line 29, in add_department
+    print(departments)
+NameError: name 'departments' is not defined
+2022-12-04 10:04:30,779 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 10:04:30,779 INFO Scheduler has been shut down
+2022-12-04 10:04:32,609 INFO An INFO
+2022-12-04 10:04:32,610 WARNING A WARNING
+2022-12-04 10:04:32,610 ERROR An ERROR
+2022-12-04 10:04:32,610 CRITICAL A message of CRITICAL severity
+2022-12-04 10:04:32,613 INFO Scheduler started
+2022-12-04 10:04:37,581 INFO Александр Соловьев запустил команду start
+2022-12-04 10:09:02,884 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 10:09:02,884 INFO Scheduler has been shut down
+2022-12-04 10:09:05,214 INFO An INFO
+2022-12-04 10:09:05,214 WARNING A WARNING
+2022-12-04 10:09:05,215 ERROR An ERROR
+2022-12-04 10:09:05,215 CRITICAL A message of CRITICAL severity
+2022-12-04 10:09:05,217 INFO Scheduler started
+2022-12-04 10:09:11,924 INFO Александр Соловьев запустил команду start
+2022-12-04 10:44:25,764 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 10:44:25,764 INFO Scheduler has been shut down
+2022-12-04 10:44:27,614 INFO An INFO
+2022-12-04 10:44:27,615 WARNING A WARNING
+2022-12-04 10:44:27,615 ERROR An ERROR
+2022-12-04 10:44:27,615 CRITICAL A message of CRITICAL severity
+2022-12-04 10:44:27,617 INFO Scheduler started
+2022-12-04 10:44:33,610 INFO Александр Соловьев запустил команду start
+2022-12-04 10:47:55,114 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 10:47:55,114 INFO Scheduler has been shut down
+2022-12-04 10:47:57,192 INFO An INFO
+2022-12-04 10:47:57,192 WARNING A WARNING
+2022-12-04 10:47:57,192 ERROR An ERROR
+2022-12-04 10:47:57,193 CRITICAL A message of CRITICAL severity
+2022-12-04 10:47:57,195 INFO Scheduler started
+2022-12-04 10:48:00,718 INFO Александр Соловьев запустил команду start
+2022-12-04 10:48:19,494 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\conversationhandler.py", line 627, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\handler.py", line 199, in handle_update
+    return self.callback(update, context)
+TypeError: input_employee() takes 0 positional arguments but 2 were given
+2022-12-04 10:51:13,586 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 10:51:13,586 INFO Scheduler has been shut down
+2022-12-04 10:51:15,119 INFO An INFO
+2022-12-04 10:51:15,119 WARNING A WARNING
+2022-12-04 10:51:15,120 ERROR An ERROR
+2022-12-04 10:51:15,120 CRITICAL A message of CRITICAL severity
+2022-12-04 10:51:15,122 INFO Scheduler started
+2022-12-04 10:51:16,810 INFO Александр Соловьев запустил команду start
+2022-12-04 10:51:28,872 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\conversationhandler.py", line 627, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\handler.py", line 199, in handle_update
+    return self.callback(update, context)
+TypeError: input_employee() takes 0 positional arguments but 2 were given
+2022-12-04 10:51:53,674 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 10:51:53,674 INFO Scheduler has been shut down
+2022-12-04 10:51:55,481 INFO An INFO
+2022-12-04 10:51:55,481 WARNING A WARNING
+2022-12-04 10:51:55,481 ERROR An ERROR
+2022-12-04 10:51:55,481 CRITICAL A message of CRITICAL severity
+2022-12-04 10:51:55,485 INFO Scheduler started
+2022-12-04 10:51:58,707 INFO Александр Соловьев запустил команду start
+2022-12-04 10:52:20,400 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\conversationhandler.py", line 627, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\handler.py", line 199, in handle_update
+    return self.callback(update, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\t_bot\handlers.py", line 76, in new_employee
+    add_employee(new_employee_form["name"], new_employee_form["salary"])
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\models.py", line 36, in add_employee
+    note_to_add = {"id": find_last_id(employees) + 1, "fio": fio, "salary": salary}
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\models.py", line 17, in find_last_id
+    return max([i["id"] for i in lst])
+ValueError: max() arg is an empty sequence
+2022-12-04 10:53:17,320 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 10:53:17,320 INFO Scheduler has been shut down
+2022-12-04 10:53:19,376 INFO An INFO
+2022-12-04 10:53:19,376 WARNING A WARNING
+2022-12-04 10:53:19,376 ERROR An ERROR
+2022-12-04 10:53:19,376 CRITICAL A message of CRITICAL severity
+2022-12-04 10:53:19,378 INFO Scheduler started
+2022-12-04 10:53:23,503 INFO Александр Соловьев запустил команду start
+2022-12-04 10:53:31,342 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\conversationhandler.py", line 627, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\handler.py", line 199, in handle_update
+    return self.callback(update, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\t_bot\handlers.py", line 76, in new_employee
+    add_employee(new_employee_form["name"], new_employee_form["salary"])
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\models.py", line 37, in add_employee
+    note_to_add = {"id": find_last_id(employees) + 1, "fio": fio, "salary": salary}
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\models.py", line 17, in find_last_id
+    return max([i["id"] for i in lst])
+ValueError: max() arg is an empty sequence
+2022-12-04 10:53:51,041 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\conversationhandler.py", line 627, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\handler.py", line 199, in handle_update
+    return self.callback(update, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\t_bot\handlers.py", line 75, in new_employee
+    new_employee_form["salary"] = int(um.text)
+ValueError: invalid literal for int() with base 10: '/start'
+2022-12-04 10:53:52,819 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\conversationhandler.py", line 627, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\handler.py", line 199, in handle_update
+    return self.callback(update, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\t_bot\handlers.py", line 76, in new_employee
+    add_employee(new_employee_form["name"], new_employee_form["salary"])
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\models.py", line 37, in add_employee
+    note_to_add = {"id": find_last_id(employees) + 1, "fio": fio, "salary": salary}
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\models.py", line 17, in find_last_id
+    return max([i["id"] for i in lst])
+ValueError: max() arg is an empty sequence
+2022-12-04 10:53:58,958 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 10:53:58,958 INFO Scheduler has been shut down
+2022-12-04 10:54:00,665 INFO An INFO
+2022-12-04 10:54:00,666 WARNING A WARNING
+2022-12-04 10:54:00,666 ERROR An ERROR
+2022-12-04 10:54:00,666 CRITICAL A message of CRITICAL severity
+2022-12-04 10:54:00,668 INFO Scheduler started
+2022-12-04 10:54:03,639 INFO Александр Соловьев запустил команду start
+2022-12-04 10:57:00,206 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 10:57:00,206 INFO Scheduler has been shut down
+2022-12-04 10:57:01,743 INFO An INFO
+2022-12-04 10:57:01,743 WARNING A WARNING
+2022-12-04 10:57:01,744 ERROR An ERROR
+2022-12-04 10:57:01,744 CRITICAL A message of CRITICAL severity
+2022-12-04 10:57:01,745 INFO Scheduler started
+2022-12-04 10:57:34,689 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 10:57:34,689 INFO Scheduler has been shut down
+2022-12-04 10:57:36,374 INFO An INFO
+2022-12-04 10:57:36,374 WARNING A WARNING
+2022-12-04 10:57:36,374 ERROR An ERROR
+2022-12-04 10:57:36,374 CRITICAL A message of CRITICAL severity
+2022-12-04 10:57:36,376 INFO Scheduler started
+2022-12-04 10:57:40,040 INFO Александр Соловьев запустил команду start
+2022-12-04 10:57:52,846 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\conversationhandler.py", line 627, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\handler.py", line 199, in handle_update
+    return self.callback(update, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\t_bot\handlers.py", line 76, in new_employee
+    ui.ui_controller.main(5, (new_employee_form["name"], new_employee_form["salary"]))
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\ui\ui_controller.py", line 21, in main
+    result = MENU_ACTIONS[menu_number][1](param)
+TypeError: input_employee() missing 1 required positional argument: 'salary'
+2022-12-04 11:01:46,758 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 11:01:46,758 INFO Scheduler has been shut down
+2022-12-04 11:01:48,686 INFO An INFO
+2022-12-04 11:01:48,686 WARNING A WARNING
+2022-12-04 11:01:48,686 ERROR An ERROR
+2022-12-04 11:01:48,686 CRITICAL A message of CRITICAL severity
+2022-12-04 11:01:48,688 INFO Scheduler started
+2022-12-04 11:01:54,876 INFO Александр Соловьев запустил команду start
+2022-12-04 11:21:42,102 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 11:21:42,102 INFO Scheduler has been shut down
+2022-12-04 11:21:43,861 INFO An INFO
+2022-12-04 11:21:43,861 WARNING A WARNING
+2022-12-04 11:21:43,861 ERROR An ERROR
+2022-12-04 11:21:43,861 CRITICAL A message of CRITICAL severity
+2022-12-04 11:21:43,864 INFO Scheduler started
+2022-12-04 11:21:52,860 INFO Александр Соловьев запустил команду start
+2022-12-04 11:23:04,319 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 11:23:04,319 INFO Scheduler has been shut down
+2022-12-04 11:23:06,156 INFO An INFO
+2022-12-04 11:23:06,156 WARNING A WARNING
+2022-12-04 11:23:06,156 ERROR An ERROR
+2022-12-04 11:23:06,156 CRITICAL A message of CRITICAL severity
+2022-12-04 11:23:06,160 INFO Scheduler started
+2022-12-04 11:23:10,185 INFO Александр Соловьев запустил команду start
+2022-12-04 11:23:21,711 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\conversationhandler.py", line 627, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\handler.py", line 199, in handle_update
+    return self.callback(update, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\t_bot\handlers.py", line 95, in hire_employee_handler
+    ui.ui_controller.main(6, hire_employee_form)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\ui\ui_controller.py", line 22, in main
+    result = MENU_ACTIONS[menu_number][1](param)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\ui\ui_view.py", line 60, in input_id_tohire
+    id_department = hire_dict['id_department']
+KeyError: 'id_department'
+2022-12-04 11:24:19,396 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 11:24:19,397 INFO Scheduler has been shut down
+2022-12-04 11:24:21,038 INFO An INFO
+2022-12-04 11:24:21,038 WARNING A WARNING
+2022-12-04 11:24:21,038 ERROR An ERROR
+2022-12-04 11:24:21,038 CRITICAL A message of CRITICAL severity
+2022-12-04 11:24:21,040 INFO Scheduler started
+2022-12-04 11:24:24,072 INFO Александр Соловьев запустил команду start
+2022-12-04 11:25:35,835 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 11:25:35,835 INFO Scheduler has been shut down
+2022-12-04 11:25:37,612 INFO An INFO
+2022-12-04 11:25:37,612 WARNING A WARNING
+2022-12-04 11:25:37,612 ERROR An ERROR
+2022-12-04 11:25:37,612 CRITICAL A message of CRITICAL severity
+2022-12-04 11:25:37,614 INFO Scheduler started
+2022-12-04 11:25:51,528 INFO Александр Соловьев запустил команду start
+2022-12-04 11:49:39,110 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 11:49:39,110 INFO Scheduler has been shut down
+2022-12-04 11:49:41,776 INFO An INFO
+2022-12-04 11:49:41,776 WARNING A WARNING
+2022-12-04 11:49:41,776 ERROR An ERROR
+2022-12-04 11:49:41,776 CRITICAL A message of CRITICAL severity
+2022-12-04 11:49:41,780 INFO Scheduler started
+2022-12-04 11:49:57,517 INFO Александр Соловьев запустил команду start
+2022-12-04 11:51:02,621 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 11:51:02,622 INFO Scheduler has been shut down
+2022-12-04 11:51:05,318 INFO An INFO
+2022-12-04 11:51:05,318 WARNING A WARNING
+2022-12-04 11:51:05,318 ERROR An ERROR
+2022-12-04 11:51:05,318 CRITICAL A message of CRITICAL severity
+2022-12-04 11:51:05,323 INFO Scheduler started
+2022-12-04 11:51:10,132 INFO Александр Соловьев запустил команду start
+2022-12-04 11:53:01,304 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 11:53:01,305 INFO Scheduler has been shut down
+2022-12-04 11:53:03,519 INFO An INFO
+2022-12-04 11:53:03,519 WARNING A WARNING
+2022-12-04 11:53:03,519 ERROR An ERROR
+2022-12-04 11:53:03,519 CRITICAL A message of CRITICAL severity
+2022-12-04 11:53:03,523 INFO Scheduler started
+2022-12-04 11:53:15,788 INFO Александр Соловьев запустил команду start
+2022-12-04 15:43:47,683 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 15:43:47,683 INFO Scheduler has been shut down
+2022-12-04 15:43:50,829 INFO An INFO
+2022-12-04 15:43:50,829 WARNING A WARNING
+2022-12-04 15:43:50,829 ERROR An ERROR
+2022-12-04 15:43:50,829 CRITICAL A message of CRITICAL severity
+2022-12-04 15:43:50,831 INFO Scheduler started
+2022-12-04 16:32:38,694 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 16:32:38,695 INFO Scheduler has been shut down
+2022-12-04 16:32:40,960 INFO An INFO
+2022-12-04 16:32:40,960 WARNING A WARNING
+2022-12-04 16:32:40,960 ERROR An ERROR
+2022-12-04 16:32:40,960 CRITICAL A message of CRITICAL severity
+2022-12-04 16:32:40,962 INFO Scheduler started
+2022-12-04 16:32:51,064 INFO Александр Соловьев запустил команду start
+2022-12-04 16:33:13,620 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\conversationhandler.py", line 627, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\handler.py", line 199, in handle_update
+    return self.callback(update, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\t_bot\handlers.py", line 53, in show_employee_by_id_department
+    id_dep = int(um.text)
+ValueError: invalid literal for int() with base 10: 'fg'
+2022-12-04 16:36:47,049 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\conversationhandler.py", line 627, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\venv\lib\site-packages\telegram\ext\handler.py", line 199, in handle_update
+    return self.callback(update, context)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\t_bot\handlers.py", line 100, in hire_employee_handler
+    res = ui.ui_controller.main(6, hire_employee_form)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\ui\ui_controller.py", line 23, in main
+    result = MENU_ACTIONS[menu_number][1](param)
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\ui\ui_view.py", line 61, in input_id_tohire
+    if not is_employee_in_department(id_employee, id_department):
+  File "D:\!MyEducation\Python\Homeworks\Seminar10\Task2\models.py", line 25, in is_employee_in_department
+    if id_employee in [x["employees"] for x in departments if x["id"] == id_department][0]:
+IndexError: list index out of range
+2022-12-04 16:38:43,123 INFO Received signal 2 (SIGINT), stopping...
+2022-12-04 16:38:43,123 INFO Scheduler has been shut down
+2022-12-04 16:38:45,028 INFO An INFO
+2022-12-04 16:38:45,028 WARNING A WARNING
+2022-12-04 16:38:45,029 ERROR An ERROR
+2022-12-04 16:38:45,029 CRITICAL A message of CRITICAL severity
+2022-12-04 16:38:45,032 INFO Scheduler started
+2022-12-04 16:38:52,943 INFO Александр Соловьев запустил команду start
+2022-12-04 16:39:16,094 INFO Александр Соловьев запустил команду start
